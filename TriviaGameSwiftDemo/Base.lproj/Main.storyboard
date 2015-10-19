@@ -67,6 +67,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonA" destination="l57-tP-kIh" id="Yzh-Ae-93B"/>
+                        <outlet property="buttonB" destination="16o-6z-8OB" id="0Ma-7I-vjH"/>
+                        <outlet property="buttonC" destination="JjD-AX-9vK" id="ONl-S9-8rW"/>
+                        <outlet property="buttonD" destination="pAL-bE-3A8" id="We7-Uq-HnX"/>
+                        <outlet property="labelQuestion" destination="cIx-Vw-k1D" id="dIg-7C-ezb"/>
+                        <outlet property="labelScore" destination="yuU-Yu-mIu" id="R2U-52-n4G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
