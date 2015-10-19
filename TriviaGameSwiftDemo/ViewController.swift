@@ -147,20 +147,55 @@ class ViewController: UIViewController {
     
     @IBAction func pressedButtonA(sender: UIButton) {
         print("Button A pressed")
+        buttonB.alpha = 0.3
+        buttonC.alpha = 0.3
+        buttonD.alpha = 0.3
+        
+        buttonA.enabled = false
+        buttonB.enabled = false
+        buttonC.enabled = false
+        buttonD.enabled = false
     }
     
     @IBAction func pressedButtonB(sender: UIButton) {
         print("Button B pressed")
+        buttonA.alpha = 0.3
+        buttonC.alpha = 0.3
+        buttonD.alpha = 0.3
+        
+        buttonA.enabled = false
+        buttonB.enabled = false
+        buttonC.enabled = false
+        buttonD.enabled = false
+        
     }
     
     @IBAction func pressedButtonC(sender: UIButton) {
         print("Button C pressed")
+        buttonA.alpha = 0.3
+        buttonB.alpha = 0.3
+        buttonD.alpha = 0.3
+        
+        buttonA.enabled = false
+        buttonB.enabled = false
+        buttonC.enabled = false
+        buttonD.enabled = false
     }
     
     @IBAction func pressedButtonD(sender: UIButton) {
         print("Button D pressed")
+        buttonA.alpha = 0.3
+        buttonB.alpha = 0.3
+        buttonC.alpha = 0.3
+        
+        buttonA.enabled = false
+        buttonB.enabled = false
+        buttonC.enabled = false
+        buttonD.enabled = false
     }
     
+    @IBAction func pressedButtonNext(sender: UIButton) {
+    }
     
     
 }
