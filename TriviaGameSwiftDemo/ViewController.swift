@@ -145,6 +145,24 @@ class ViewController: UIViewController {
         buttonD.enabled = true
     }
     
+    @IBAction func pressedButtonA(sender: UIButton) {
+        print("Button A pressed")
+    }
+    
+    @IBAction func pressedButtonB(sender: UIButton) {
+        print("Button B pressed")
+    }
+    
+    @IBAction func pressedButtonC(sender: UIButton) {
+        print("Button C pressed")
+    }
+    
+    @IBAction func pressedButtonD(sender: UIButton) {
+        print("Button D pressed")
+    }
+    
+    
+    
 }
 
 
