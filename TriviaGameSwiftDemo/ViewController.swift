@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         
         loadScore()
         loadAllQuestionsAndAnswers()
+        loadQuestion(1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,6 +62,17 @@ class ViewController: UIViewController {
         } catch {
             print(allEntries)
         }
+        print(allEntries)
+    }
+    
+    func loadQuestion(index: Int) {
+        
+        let entry :NSDictionary = allEntries.objectAtIndex(index) as! NSDictionary
+        let question: NSString = entry.objectForKey("question") as! NSString
+        let arr: NSMutableArray = entry.objectForKey("answers") as! NSMutableArray
+        
+        print(question)
+        print(arr)
     }
 
 }
