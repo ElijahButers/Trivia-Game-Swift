@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonB: UIButton!
     @IBOutlet weak var buttonC: UIButton!
     @IBOutlet weak var buttonD: UIButton!
-    @IBOutlet weak var next: UIButton!
+    @IBOutlet weak var buttonNext: UIButton!
     
     @IBOutlet weak var labelQuestion: UILabel!
     @IBOutlet weak var labelScore: UILabel!
@@ -113,6 +113,9 @@ class ViewController: UIViewController {
                 break;
             }
         }
+        buttonNext.hidden = true
+        //We will need to reset the buttons to reenable them
+        resetAnswerButtons()
         
     }
     
@@ -128,6 +131,19 @@ class ViewController: UIViewController {
         return list
             
         }
+    
+    
+    func resetAnswerButtons() {
+        
+        buttonA.alpha = 1.0
+        buttonB.alpha = 1.0
+        buttonC.alpha = 1.0
+        buttonD.alpha = 1.0
+        buttonA.enabled = true
+        buttonB.enabled = true
+        buttonC.enabled = true
+        buttonD.enabled = true
+    }
     
 }
 
