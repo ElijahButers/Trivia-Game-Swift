@@ -12,6 +12,7 @@
 		E2E412521BD5121B003AE7CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E412501BD5121B003AE7CF /* Main.storyboard */; };
 		E2E412541BD5121B003AE7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E412531BD5121B003AE7CF /* Assets.xcassets */; };
 		E2E412571BD5121B003AE7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E412551BD5121B003AE7CF /* LaunchScreen.storyboard */; };
+		E2E412651BD54ECB003AE7CF /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E412641BD54ECB003AE7CF /* content.json */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E2E412531BD5121B003AE7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2E412561BD5121B003AE7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2E412581BD5121B003AE7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E412641BD54ECB003AE7CF /* content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				E2E4124E1BD5121B003AE7CF /* ViewController.swift */,
 				E2E412501BD5121B003AE7CF /* Main.storyboard */,
 				E2E412531BD5121B003AE7CF /* Assets.xcassets */,
+				E2E412641BD54ECB003AE7CF /* content.json */,
 				E2E412551BD5121B003AE7CF /* LaunchScreen.storyboard */,
 				E2E412581BD5121B003AE7CF /* Info.plist */,
 			);
@@ -124,6 +127,7 @@
 				E2E412571BD5121B003AE7CF /* LaunchScreen.storyboard in Resources */,
 				E2E412541BD5121B003AE7CF /* Assets.xcassets in Resources */,
 				E2E412521BD5121B003AE7CF /* Main.storyboard in Resources */,
+				E2E412651BD54ECB003AE7CF /* content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

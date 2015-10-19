@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-
     
     @IBOutlet weak var buttonA: UIButton!
     @IBOutlet weak var buttonB: UIButton!
@@ -22,10 +20,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelScore: UILabel!
     
     var score: Int = 0
+    var allEntries: NSArray!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        loadScore()
+        loadAllQuestionsAndAnswers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +48,30 @@ class ViewController: UIViewController {
         defaults.setInteger(score, forKey: "score")
     }
 
+    
+    func loadAllQuestionsAndAnswers() {
+        
+        
+        let path = NSBundle.mainBundle().pathForResource("content", ofType: "json")
+        let jsonData: NSData = NSData(contentsOfFile: path!)!
+        
+        do {
+            
+            allEntries = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as! NSArray
+        } catch {
+            print(allEntries)
+        }
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
 
